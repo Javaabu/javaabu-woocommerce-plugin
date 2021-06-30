@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Regular-webfont.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Light-webfont.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Bold-webfont.ttf');
+    font-weight: bold;
+}
+
+
+body {
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.site-logo {
+    width: 250px;
+    margin-top: 25px;
+}
+
+.body-wrapper {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px;
+}
+
+p {
+    font-weight: 300;
+}
+
+dd, dt {
+    display: inline-block;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    font-weight: 400;
+}
+
+dl {
+    border: 0.5px solid #e5e5e5;
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.barcode {
+    float: right;
+    margin-left: 25px;
+    width: 150px;
+}
+
+.barcode p {
+    font-size: 10px;
+}
+
+.form-body {
+    margin-right: 170px;
+}
+
+.form-header {
+    margin-bottom: 50px;
+}
+
+.copy-btn {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #e2e2e2;
+    margin-left: 10px;
+    position: relative;
+    bottom: -2px;
+}
+
+.copy-btn:hover {
+    background-color: #bdbdbd;
+}
+
+.custom-file-attach input {
+    display: none;
+}
+
+.custom-file-attach .custom-attach-btn {
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.form-footer {
+    display: flex;
+
+}
+
+.form-footer .btn {
+    flex: 1;
+    text-align: center;
+    display: block;
+    border: 1px solid #e2e2e2;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-footer .btn:first-child {
+    margin-right: 10px;
+}
+
+.form-footer .btn:last-child {
+    margin-left: 10px;
+}
+
+.credit {
+    font-size: 10px;
+    color: white;
+}
+
+.credit a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 764px) {
+    .barcode {
+        display: none;
+    }
+
+    .form-body {
+        margin-right: 0;
+    }
+}
