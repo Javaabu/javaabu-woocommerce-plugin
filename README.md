@@ -1,5 +1,8 @@
 # Javaabu Woocommerce Plugin
-Adds additional functionality to WooCommerce such as bank transfer payment slip uploading
+Adds additional functionality to WooCommerce such as bank transfer payment slip uploading.
+
+## Installation
+Download the zip file of the repo and install the plugin from the WordPress dashboard.
 
 ## Credits
 
