@@ -21,7 +21,7 @@ if (isset($_FILES['proof-of-payment'])) {
 }
 
 $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-$theme_color = ! empty($plugin->get_option('bank')) ? $plugin->get_option('bank') : '#8b8b8b';
+$theme_color = ! empty($plugin->get_option('theme_color')) ? $plugin->get_option('theme_color') : '#8b8b8b';
 ?>
 
 <html>
