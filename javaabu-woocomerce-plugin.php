@@ -272,8 +272,6 @@ function javaabu_woocommerce_plugin_init() {
             $size_valid = $this->check_file_size($file);
             $upload_filepath = $this->get_file_path($file, $order_id);
 
-            var_dump($format_valid, $size_valid, $upload_filepath);
-
             if( $format_valid && $size_valid && copy( $file['tmp_name'], $upload_filepath ) ) {
                 return update_post_meta( $order_id, '_woo_javaabu_wc_uploaded_payment_proof', $upload_filepath );
             } else {

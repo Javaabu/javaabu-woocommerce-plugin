@@ -14,7 +14,7 @@ if (! $pass) {
 $uploaded = null;
 if (isset($_FILES['proof-of-payment'])) {
     $uploaded = $plugin->upload_proof_of_payment($order_id, $_FILES['proof-of-payment']);
-    var_dump($uploaded);
+
     if ($uploaded) {
         $plugin->make_onhold($order_id);
     }
